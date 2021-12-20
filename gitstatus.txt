@@ -1,0 +1,144 @@
+git  command
+
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile
+
+$ git clone https://github.com/RoshaMahalle/PythonCode.git..............................................
+
+Cloning into 'PythonCode'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), 4.65 KiB | 1.55 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile
+$cd PythonCode  ...................................................................
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile
+
+$ git status                                        .................................
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   New Text Document.txt       (red color)  (current/working directory)
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git add New\ Text\ Document.txt                   ................................................
+
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git status                             .............................................
+                                  
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   New Text Document.txt        (green color)    (staging area)
+
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git add  gitstatus.txt                        ..............................
+
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git status                         ...................................................
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   New Text Document.txt
+        new file:   gitstatus.txt
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git config --global user.email "rrmahalle97@gmail.com"                  ......................
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git config --global user.name "RoshanMahalle"             ........................
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git commit -m "changes done in newtextfile and add gitstatus file"               ....................
+
+[main e2bd581] changes done in newtextfile and add gitstatus file
+ 2 files changed, 57 insertions(+)
+ create mode 100644 gitstatus.txt
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git status                      ...................................
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git push origin head           ...................................................
+
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 999 bytes | 499.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/RoshaMahalle/PythonCode.git
+   39d298f..e2bd581  head -> main
+
+@RoshaMahalle
+RoshaMahalle changes done in newtextfile and add gitstatus file           .... git repository.....................
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+$ git status                  ....................................................
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   New Text Document.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git add .                   ............................
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git commit -m "delete some data"                      ........................
+[main 2f78fa3] delete some data
+ 1 file changed, 4 deletions(-)
+
+
+Dell@DESKTOP-H8UJOT8 MINGW64 ~/Desktop/GitFile/PythonCode (main)
+
+$ git push origin head                             ..................................
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/RoshaMahalle/PythonCode.git
+   e2bd581..2f78fa3  head -> main
+
+-- go to github ..check pythoncode ..delete some data , open file and display whenever data deleted..
